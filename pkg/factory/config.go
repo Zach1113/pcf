@@ -76,6 +76,7 @@ type Configuration struct {
 	DefaultBdtRefId string    `yaml:"defaultBdtRefId,omitempty" valid:"required, type(string)"`
 	NrfUri          string    `yaml:"nrfUri,omitempty" valid:"required, url"`
 	NrfCertPem      string    `yaml:"nrfCertPem,omitempty" valid:"optional"`
+	NrfNfInstanceId string    `yaml:"nrfNfInstanceId,omitempty" valid:"optional,uuidv4"`
 	Bsf             *Bsf      `yaml:"bsf,omitempty" valid:"optional"`
 	ServiceList     []Service `yaml:"serviceList,omitempty" valid:"required"`
 	Mongodb         *Mongodb  `yaml:"mongodb" valid:"required"`
